@@ -1,0 +1,20 @@
+#include <stdio.h>
+struct city
+{
+    int pincode;
+    char d[10];
+};
+struct address
+{
+    char name[10];
+    struct city c;
+} a1;
+void main()
+{
+    struct address a1;
+    struct city c1;
+
+    scanf("%d \n %s \n%s", &c1.pincode, &c1.d, &a1.name);
+
+    printf("%d %s %s", a1.c.pincode, a1.c.d, a1.name);
+}
